@@ -1,4 +1,7 @@
-import PIL.Imagedef main():
+import PIL.Image
+
+
+def main():
     path = input("Enter the path to the image fiel : \n")
     try:
         image = PIL.Image.open(path)
@@ -16,4 +19,6 @@ import PIL.Imagedef main():
             "\n"  # save the string to a file
     with open("ascii_image.txt", "w") as f:
         f.write(ascii_img)
+
+
 main()
